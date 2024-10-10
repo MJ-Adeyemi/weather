@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Weather by City</title>
+</head>
+
+<body class="bg-green-500">
+    <div class="flex justify-center">
+        <div class="bg-green-300 my-10 mx-5 rounded-[20px] w-[350px] shadow-2xl">
+            <p class="font-bold text-[30px] text-center text-green-950">Get City's Weather</p>
+        </div>
+    </div>
+
+    <div class="flex justify-center -mt-7">
+        <div class="bg-green-300 py-10 my-10 mx-5 rounded-[20px]  min-w-0:w-[1000px] shadow-2xl ">
+            <div class="px-5 flex justify-center">
+                <input type="text" class="outline-none px-3 text-green-950 text-[20px] w-[250px] min-w-0 h-[40px] font-bold" placeholder="Enter City Name" required id="textInput">
+                <button onclick="searchWord()"><span class="border-none w-[50px] p-[7px] text-[20px] bg-white"><i
+                            class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+        
+            <br>
+        
+            <hr class="border-[2px]">
+        
+            <p class="px-5 my-5" id="showhere"></p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
