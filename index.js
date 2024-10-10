@@ -26,9 +26,7 @@ async function searchWord() {
    `;
 
     showResult.innerHTML = text;
-
   } catch (error) {
     console.log(error);
-    
   }
 }
